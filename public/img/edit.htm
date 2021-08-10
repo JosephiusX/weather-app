@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<!-- saved from url=(0063)http://localhost:3000/campgrounds/61005c70adf54655642ec93d/edit -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+    <link href="./edit_files/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <script src="./edit_files/mapbox-gl.js.download"></script>
+    <link href="./edit_files/mapbox-gl.css" rel="stylesheet">
+    <link rel="stylesheet" href="./edit_files/app.css">
+  </head>
+  <body class="d-flex flex-column vh-100">
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="http://localhost:3000/campgrounds/61005c70adf54655642ec93d/edit#">YelpCamp</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" href="http://localhost:3000/">Home</a>
+          <a class="nav-link" href="http://localhost:3000/campgrounds">Campgrounds</a>
+          <a class="nav-link" href="http://localhost:3000/campgrounds/new">New Campground</a>
+        </div>
+      </div>
+      <div class="navbar-nav ml-auto">
+        
+        <a class="nav-link" href="http://localhost:3000/logout">Logout</a>
+         
+      </div>
+    </div>
+  </nav>
+    <main class="container mt-5">
+      
+
+
+ 
+<div class="row">
+  <h1 class="text-center">Edit Campground</h1>
+  <div class="col-6 offset-3">
+    <form action="http://localhost:3000/campgrounds/61005c70adf54655642ec93d?_method=PUT" method="POST" novalidate="" class="validated-form" enctype="multipart/form-data">
+      <div class="mb-3">
+        <label class="form-label" for="title">Title</label>
+        <input class="form-control" type="text" id="title" name="campground[title]" value="Grizzly Hunting Camp &lt;script&gt;alert(&#39;haha&#39;)&lt;/script&gt;" required="">
+        <div class="valid-feedback">Looks good!</div>
+      </div>
+      <div class="mb-3">
+        <label class="form-label" for="location">Location</label>
+        <input class="form-control" type="text" id="location" name="campground[location]" value="Redwood City, California" required="">
+        <div class="valid-feedback">Looks good!</div>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label" for="price">Campground Price</label>
+        <div class="input-group">
+          <span class="input-group-text" id="price-label">$</span>
+          <input type="text" class="form-control" id="price" placeholder="0.00" aria-label="price" aria-describedby="price-label" name="campground[price]" value="29" required="">
+          <div class="valid-feedback">Looks good!</div>
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label" for="description">Description</label>
+        <textarea class="form-control" type="text" id="description" name="campground[description]" required="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolores vero perferendis laudantium, consequuntur voluptatibus nulla architecto, sit soluta esse iure sed labore ipsam a cum nihil atque molestiae deserunt!</textarea>
+        <div class="valid-feedback">Looks good!</div>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label" for="image">Add Images</label>
+        <input type="file" name="image" id="image">
+      </div>
+
+      <div class="mb-3">
+        
+        <img src="./edit_files/ahfnenvca4tha00h2ubt.png" class="img-thumbnail">
+        <div class="form-check-inline">
+          <input type="checkbox" id="image-0" name="deleteImages[]" value="YelpCamp/ahfnenvca4tha00h2ubt">
+        </div>
+        <label for="image-0">Delete?</label>
+        
+        <img src="./edit_files/ruyoaxgf72nzpi4y6cdi.png" class="img-thumbnail">
+        <div class="form-check-inline">
+          <input type="checkbox" id="image-1" name="deleteImages[]" value="YelpCamp/ruyoaxgf72nzpi4y6cdi">
+        </div>
+        <label for="image-1">Delete?</label>
+        
+      </div>
+
+      <div class="mb-3">
+        <button class="btn btn-info">Update Campground</button>
+      </div>
+    </form>
+    <a href="http://localhost:3000/campgrounds/61005c70adf54655642ec93d">Back To Campground</a>
+  </div>
+</div>
+
+    </main>
+    <footer class="footer bg-dark py-3 mt-auto">
+    <div class="container">
+        <span class="text-muted">©YelpCamp 2021</span>
+    </div>
+</footer>
+
+    <script src="./edit_files/popper.min.js.download" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="./edit_files/bootstrap.min.js.download" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    <script src="./edit_files/bs-custom-file-input.min.js.download"></script>
+
+    <script src="./edit_files/validateForms.js.download"></script>
+  
+
+</body></html>
